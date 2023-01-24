@@ -14,14 +14,14 @@
             <h1>Tasklet</h1>
         </div>
         <div id="form-wrap">
-            <form action="index.html">
+            <form action="https://x8ki-letl-twmt.n7.xano.io/api:pKuTteKc/tasker_post" method="POST">
                 <div class="top-form">
-                    <select name="card=type" id="card-type" required>
+                    <select name="card-type" id="card-type" required>
                         <option value="task">Task</option>
                         <option value="note">Note</option>
                     </select>
                     <label for="title">Title:</label>
-                    <input type="text" id='title' required maxlength="25" placeholder="Add Random Phrase">
+                    <input type="text" id='title' name='title' required maxlength="25" placeholder="Add Random Phrase">
                 </div>
                 <div class="bottom-form">
                     <textarea name="text-body" id="text-body" cols="25" rows="7" required></textarea>
@@ -41,18 +41,42 @@
                     </p>
                 </div>
                 <div class="card-inputs">
-                    <button class="-card-button" id="compete">Complete</button>
+                    <button class="card-button" id="compete">Complete</button>
                     <button class="card-button" id="delete">Delete</button>
                 </div>
             </div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+            <div class="card">
+                <div class="card-title">
+                    <h3 id='card-title-text'>Title</h3>
+                    <h2 id=card-title-date>10/1/1986</h2>
+                </div>
+                <div id="card-text-body-wrap">
+                    <p class="card-text-body">
+                        This is a test card text body. This is where you will see your task and notes appear. This is a test card text body. This is where you will see your task and notes appear.
+                    </p>
+                </div>
+                <div class="card-inputs">
+                    <button class="card-button" id="compete">Complete</button>
+                    <button class="card-button" id="delete">Delete</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    <h3 id='card-title-text'>Title</h3>
+                    <h2 id=card-title-date>10/1/1986</h2>
+                </div>
+                <div id="card-text-body-wrap">
+                    <p class="card-text-body">
+                        This is a test card text body. This is where you will see your task and notes appear. This is a test card text body. This is where you will see your task and notes appear.
+                    </p>
+                </div>
+                <div class="card-inputs">
+                    <button class="card-button" id="complete">Complete</button>
+                    <button class="card-button" id="delete">Delete</button>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- <footer id='foot'></footer> -->
+    <footer id='foot'></footer>
 </body>
 </html>

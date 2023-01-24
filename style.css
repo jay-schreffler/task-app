@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#nav {
+    height: 5vh;
+    /* border: 2px solid red; */
+    text-align: center;
+    margin: 5px;
+    color: rgb(127, 127, 240);
+}
+
+/* form */
+#form-wrap {
+    border: 2px solid rgb(127, 127, 240);
+    border-radius: 5px;
+    height: 29vh;
+    width: 89vw;
+    margin: auto;
+    background-color: rgb(127, 127, 240);
+}
+
+#form-wrap select, #title, #form-wrap label {
+    color: white;
+}
+
+.top-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: .5em;
+}
+
+#form-wrap select {
+    width: 60px;
+    color: rgb(127, 127, 240);
+    border-radius: 2px;
+    background-color: white;
+    /* margin: 10px 18px; */
+}
+
+#form-wrap label {
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+#title {
+    height: 1.5em;
+    padding: 5px;
+    color: rgb(127, 127, 240);
+    border: none;
+    border-radius: 2px;
+    background-color: white;
+    font-weight: bolder;
+}
+
+input::placeholder {
+    color: rgb(127, 127, 240);
+}
+
+#form-wrap textarea {
+    border: 2px solid rgb(127, 127, 240);
+    border-radius: 2px;
+    width: 80vw;
+    margin: auto;
+    resize: none;
+    padding: 5px;
+    font-size: 1.2em;
+    color:rgb(127, 127, 240);
+}
+
+.bottom-form {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+#add-btn {
+    width: 60px;
+    height: 18px;
+    border: none;
+    color: rgb(127, 127, 240);
+    background-color: white;
+    border-radius: 3px;
+}
+
+/* cards - tasks/notes */
+
+#card-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px;
+    /* border: 2px solid green;
+    background-color: aqua; */
+    min-height: 50vh;
+    overflow: auto;
+}
+
+.card {
+    width: 80vw;
+    height: 20vh;
+    margin: auto;
+    border: 2px solid rgb(127, 127, 240);
+    border-radius: 2px;
+}
+
+.card:nth-child(1) {
+    margin-top: 10px;
+}
+
+.card-title {
+    display: flex;  
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+    background-color: rgb(127, 127, 240);
+}
+
+#card-title-text, #card-title-date {
+    font-size: 1.1em;
+    margin: 2px 10px;
+}
+
+#card-text-body-wrap {
+    /* border: 2px solid green; */
+    width: 70vw;
+    height:12vh;
+    margin: auto;
+    padding: 2px;
+    font-size: 1.1em;
+    overflow: scroll;
+}
+
+.card-inputs {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin: 5px 10px;
+}
+
+
+
+#foot {
+    height: 10vh;
+    border: 2px solid red;
+    background-color: red;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
